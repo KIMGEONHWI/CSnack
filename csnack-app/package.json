@@ -9,9 +9,11 @@
     "lint": "biome check .",
     "format": "biome format --write .",
     "check": "biome check .",
-    "check:apply": "biome check --apply ."
+    "check:apply": "biome check --apply .",
+    "migrate-data": "ts-node --transpile-only scripts/migrateDataToSupabase.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
     "next": "15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -22,7 +24,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^16.5.0",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
